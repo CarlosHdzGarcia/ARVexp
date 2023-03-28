@@ -37,8 +37,7 @@ let timeinfinite = setInterval(function() {
         let delMov = document.getElementById('movUp');
         document.getElementById('mul').removeChild(delMov);
         
-        let delMovMult = document.getElementById('movArriba');
-        document.getElementById('camDentro').removeChild(delMovMult);
+        
         
         
 
