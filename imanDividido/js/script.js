@@ -36,23 +36,31 @@ let timeinfinite = setInterval(function() {
 
         let delMov = document.getElementById('movUp');
         document.getElementById('mul').removeChild(delMov);
-
-        let upGal = document.createElement('a-animation');
-        upGal.setAttribute('id', 'movUp');
-        upGal.setAttribute('attribute', 'position');
-        upGal.setAttribute('to', '0 0 -0.4');
-        upGal.setAttribute('dur', '3000');
-        upGal.setAttribute('easing', 'linear');
-        document.getElementById("mul").appendChild(upGal);
-
+        
+        let delMovMult = document.getElementById('movArriba');
+        document.getElementById('camDentro').removeChild(delMovMult);
+        
+        
 
 
     }, 4000);
 
     setTimeout(function() {
 
-        let delMov = document.getElementById('movUp');
-        document.getElementById('mul').removeChild(delMov);
+
+        let downmov = document.createElement('a-entity');
+        downmov.setAttribute('id', 'movdown');
+        downmov.setAttribute('attribute', 'position');
+        downmov.setAttribute('to', '0 0 -0.4');
+        downmov.setAttribute('for', '0 0 0');
+        downmov.setAttribute('dur', '3000');
+        downmov.setAttribute('easing', 'linear');
+        document.getElementById("mul").appendChild(downmov);
+    }, 6000);
+    
+    setTimeout(function() {
+
+        
 
         let downmov = document.createElement('a-entity');
         downmov.setAttribute('id', 'movdown');
@@ -62,5 +70,6 @@ let timeinfinite = setInterval(function() {
         downmov.setAttribute('dur', '3000');
         downmov.setAttribute('easing', 'linear');
         document.getElementById("mul").appendChild(downmov);
-    }, 6000);
+    }, 8000);
+    
 }, 20000);
