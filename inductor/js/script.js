@@ -28,7 +28,7 @@ setTimeout(function() {
     audio.textContent = "<source src='assets/audio/WIND1.mp3' autoplay type='audio/mp3'>"
     var sonido = document.createElement("iframe");
     sonido.setAttribute("src", "assets/audio/WIND1.mp3");
-    document.getElementById('viento').play();
+    audio.play();
     
 
     document.getElementById("body").append(sonido);
