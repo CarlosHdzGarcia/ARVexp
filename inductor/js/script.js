@@ -26,6 +26,8 @@ setTimeout(function() {
     audio.setAttribute('class', 'audio');
     audio.setAttribute('id','viento');
     audio.textContent = "<source src='assets/audio/WIND1.mp3' autoplay type='audio/mp3'>"
+    audio.autoplay=true;
+    
  var sonido = document.createElement("iframe");
     sonido.setAttribute("src", "assets/audio/WIND1.mp3");
     
