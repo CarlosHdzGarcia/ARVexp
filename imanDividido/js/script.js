@@ -22,7 +22,7 @@ let timeinfinite = setInterval(function() {
         let movCamp = document.createElement('a-animation');
         movCamp.setAttribute('id', 'movArriba');
         movCamp.setAttribute('attribute', 'position');
-        movCamp.setAttribute('to', '0 0 -0.4');
+        movCamp.setAttribute('to', '0 0 0.5');
         movCamp.setAttribute('dur', '3000');
         movCamp.setAttribute('easing', 'linear');
         document.getElementById("camDentro").appendChild(movCamp);
